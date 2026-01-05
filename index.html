@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+    .setup {
+        color: red;
+        animation: shineRed 1.5s infinite;
+    }
+
+    .punchline {
+        color: green;
+        animation: shineGreen 1.5s infinite;
+    }
+
+    @keyframes shineRed {
+        0%   { text-shadow: 0 0 4px rgb(0, 183, 255); }
+        50%  { text-shadow: 0 0 12px  rgb(0, 183, 255); }
+        100% { text-shadow: 0 0 4px  rgb(0, 183, 255); }
+    }
+
+    @keyframes shineGreen {
+        0%   { text-shadow: 0 0 4px rgb(231, 17, 255); }
+        50%  { text-shadow: 0 0 12px rgb(231, 17, 255); }
+        100% { text-shadow: 0 0 4px rgb(231, 17, 255); }
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Setup: <span id="getSetup" class="setup"></span></h1>
+    <h2>Punchline: <span id="getPunchLine" class="punchline"></span></h2>
+     <button onclick="getRandomJoke()">Next Joke</button>
+    <script src="./app.js"></script>
+</body>
+</html>
