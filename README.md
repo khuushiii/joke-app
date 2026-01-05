@@ -33,4 +33,4 @@ A button allows users to load a new joke without refreshing the page.
 
 ---
 
-## Live Demo: 
+## Live Demo: https://khuushiii.github.io/joke-app/
